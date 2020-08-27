@@ -68,7 +68,7 @@ workflows:
           - testa
           - testb
           
-      - deploy:
-          requires:
-            - hold
+      deploy:
+        requires:
+          - hold
             
