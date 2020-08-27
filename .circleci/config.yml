@@ -77,15 +77,15 @@ workflows:
         deploy:
           requires:
             - hold
-     nightly:
-      triggers:
-        - schedule:
+  nightly:
+    triggers:
+      - schedule:
           cron: "0 0 * * *"
           filters:
             branches:
               only:
                 - master
-      jobs:
-        - nightswatch
+    jobs:
+      - nightswatch
       
             
