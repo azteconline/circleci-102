@@ -7,6 +7,7 @@ jobs:
       - checkout
       - run: mkdir -p my_workspace
       - run: echo $GREETING > my_workspace/echo-output
+      - run: echo $GREETING
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory
           root: my_workspace
